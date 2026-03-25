@@ -132,3 +132,15 @@ let users = [
 // Duyệt mảng và dùng phương thức phù hợp để in ra 
 // An - 20
 // Bình - 22
+
+// Bài 5: 
+// Cho object: 
+let userInfo = {
+    name: `Tuấn`,
+    address: {
+        city: `Hải Phòng`,
+        district: `Lê Chân`
+    }
+}
+
+// Sử dụng destructuring để lấy ra city
