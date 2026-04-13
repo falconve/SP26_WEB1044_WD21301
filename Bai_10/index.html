@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nhắc tới sự kiện => nhắc tới hàm
+    1. Hàm có sẵn của JS, VD: alert, console.log, prompt, ....
+    2. Hàm do lập trình viên tạo ra 
+    => hàm dùng để quản lý logic của sự kiện 
+    -->
+    <!-- CÁCH SỬ DỤNG SỰ KIỆN: viết tên sự kiện vào thẻ mở HTML -->
+    <button onclick="alert(`Xin chào...`)">Ấn điii</button>
+    <h2>Cộng 2 số</h2>
+    <label for="">Số thứ 1</label>
+    <input type="number" class="so-thu-1" />
+    <label for="">Số thứ 2</label>
+    <input type="number" class="so-thu-2" />
+    <button onclick="tinhTong()">Tính</button>
+
+    <p class="ket-qua-phep-cong"></p>
+
+    <!-- <h1 onmouseover="alert(`Bạn đã di chuột vào thẻ rồi`)">Di chuột vào đây</h1> -->
+
+    <form>
+      <label for="">Tên tài khoản</label>
+      <input type="text" />
+      <br />
+      <label for="">Mật khẩu</label>
+      <input type="text" class="password" />
+      <br />
+      <label for="">Nhập lại mật khẩu</label>
+      <input type="text" class="re-password" onmouseout="kiemTraMatKhau()" />
+      <p class="thong-bao" style="display: none">Mật khẩu không đúng</p>
+
+      <button class="dang-ky">Đăng ký</button>
+    </form>
+
+    <label for="">Tên sách: </label>
+    <input type="text" />
+    <br />
+    <label for="">Số lượng:</label>
+    <input type="number" />
+    <br />
+    <button>Thêm sách</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 11: Ôn tập innerHTML, querySelector, ...</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="">Họ tên</label>
+      <input type="text" id="ho-ten" />
+      <br />
+      <label for="">Năm sinh</label>
+      <input type="text" id="nam-sinh" />
+      <br />
+      <label for="">Địa chỉ</label>
+      <input type="text" id="dia-chi" />
+
+      <button onclick="themMoi()">Thêm mới</button>
+    </form>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Họ tên</th>
+          <th>Năm Sinh</th>
+          <th>Địa chỉ</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="bang-thong-tin"></tbody>
+    </table>
+
+    <script src="main.js"></script>
+  </body>
+</html>
