@@ -15,8 +15,8 @@ let themMoi = () => {
     // input
     let thongTinNguoiDung = {
       hoTen,
-      namSinh,
       diaChi,
+      namSinh,
     };
 
     // Sử dụng phương thức .push để thêm mới 1 phần tử vào trong mảng

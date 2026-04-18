@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng ký</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        padding: 30px;
+      }
+
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .error {
+        color: red;
+        font-size: 13px;
+        margin-top: 4px;
+        min-height: 16px;
+      }
+
+      .success {
+        color: green;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .input-error {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng ký tài khoản</h2>
+
+      <div class="form-group">
+        <label for="fullName">Họ Tên</label>
+        <input type="text" id="ho-ten" />
+        <!-- Mục đích hiển thị lỗi nếu người dùng nhập sai -->
+        <div class="error" id="loi-ho-ten"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <div class="error" id="loi-email"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" id="ten-dang-nhap" />
+        <div class="error" id="loi-ten-dang-nhap"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="mat-khau" />
+        <div class="error" id="loi-mat-khau"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Nhập lại mật khẩu</label>
+        <input type="password" id="nhap-lai-mat-khau" />
+        <div class="error" id="loi-nhap-lai-mat-khau"></div>
+      </div>
+
+      <button type="submit" onclick="dangKy()">Đăng ký</button>
+      <div id="thong-bao-dang-ky"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
